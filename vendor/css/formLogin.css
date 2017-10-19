@@ -1,0 +1,27 @@
+.panel-heading {
+    padding: 5px 15px;
+    color: #A0A0A0 !important;
+}
+
+.panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+i.fa.fa-user.fa-5x {
+    border: 1px solid #337ab7;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
+    color: #337ab7;
+}

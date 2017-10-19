@@ -1,0 +1,38 @@
+*[data-toggle="collapse"] {
+    .icon:before {
+        display: inline;
+        font-family: FontAwesome;
+        content: "\f106";
+    }
+
+    &.collapsed {
+        .icon:before {
+            content: "\f107";
+        }
+    }
+}
+.panel.accordion {
+    .panel-heading {
+        h3 {
+            display: block;
+        }
+        .panel-title {
+            a[data-toggle="collapse"] {
+                display: block;
+                margin: -10px -15px;
+                padding: 10px 15px;
+                &:after {
+                    display: inline;
+                    font-family: FontAwesome;
+                    content: "\f107";
+                    float: right;
+                }
+                &.collapsed {
+                    &:after {
+                        content: "\f106";
+                    }
+                }
+            }
+        }
+    }
+}

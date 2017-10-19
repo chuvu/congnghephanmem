@@ -1,0 +1,46 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    &:after {
+        display: block;
+        content: " ";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        right: 0;
+        background: rgba(208, 208, 208, 0.62);
+        z-index: 9999;
+    }
+
+    &:before {
+        display: block;
+        content: " ";
+        border: 7px solid #f3f3f3;
+        border-top: 7px solid #3498db;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 1s linear infinite;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 99999;
+    }
+
+    &.absolute {
+        &:after,
+        &:before {
+            position: absolute;
+        }
+    }
+}

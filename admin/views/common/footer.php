@@ -1,0 +1,1 @@
+<form id="logout-form" action="<?php echo url('/logout') ?>" method="POST" style="display: none;"></form>

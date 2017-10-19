@@ -1,0 +1,1 @@
+<a href="<?php echo url('reset-password', array('token' => $token)) ?>">Bấm vào đây để khôi phục mật khẩu</a>
